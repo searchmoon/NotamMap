@@ -1,0 +1,60 @@
+/* 기본 박스 사이징 초기화 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* 전체 레이아웃 여백 초기화 */
+body,
+html,
+#root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Noto Sans KR", "Helvetica Neue", Arial, sans-serif;
+  background-color: #fff;
+  color: #111;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* 기본 버튼 리셋 */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  font: inherit;
+}
+
+/* 기본 링크 스타일 초기화 */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* 리스트 마커 제거 */
+ul,
+ol {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+/* 이미지, 비디오 등 미디어 요소의 기본 스타일 */
+img,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+/* textarea, input 기본 폰트와 박스 초기화 */
+input,
+textarea {
+  font: inherit;
+  border: none;
+  outline: none;
+}
